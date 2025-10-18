@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Honda Star Motor II - Cikampek</title>
+  <meta name="description" content="Dealer resmi Honda Star Motor II Cikampek — produk, servis, dan promo terbaik." />
+  <style>
+    :root{
+      --primary:#da0c0c; /* Merah Honda */
+      --accent:#ffcc00;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --bg:#f6f8fb;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.45}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{background:linear-gradient(90deg, rgba(218,12,12,0.95), rgba(255,50,50,0.95));color:white;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:8px;background:white;color:var(--primary);display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav{margin-left:auto}
+    .nav-links{display:flex;gap:16px;align-items:center}
+    a.button{background:var(--accent);color:#111;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
+    a.button:hover{background:#b00909;color:white;transition:0.2s}
+
+    .hero{display:flex;gap:28px;align-items:center;padding:40px 0}
+    .hero-left{flex:1}
+    .hero-right{flex:1;display:flex;justify-content:center}
+    .hero h1{font-size:28px;margin:0 0 8px}
+    .hero p{color:var(--muted);margin:0 0 16px}
+
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:20px}
+    .card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 4px 14px rgba(12,20,40,0.06)}
+    .card img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+    .card h3{margin:10px 0 6px;font-size:16px}
+    .price{font-weight:700;color:var(--primary)}
+
+    .section{margin:36px 0}
+    .grid-2{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    .services{display:flex;flex-direction:column;gap:12px}
+
+    .btn{background:var(--primary);color:white;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
+    .btn:hover{background:#b00909;transition:0.2s}
+
+    footer{padding:20px 0;color:var(--muted);font-size:14px}
+
+    @media (max-width:880px){
+      .hero{flex-direction:column}
+      .grid-2{grid-template-columns:1fr}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center;">
+      <div class="brand">
+        <div class="logo">HS</div>
+        <div>
+          <div style="font-weight:800">Honda Star Motor II</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.85)">Cikampek - Dealer Resmi Honda</div>
+        </div>
+      </div>
+      <nav>
+        <div class="nav-links">
+          <a href="#produk" style="color:white;text-decoration:none">Produk</a>
+          <a href="#servis" style="color:white;text-decoration:none">Servis</a>
+          <a href="#promo" style="color:white;text-decoration:none">Promo</a>
+          <a href="#kontak" class="button">Hubungi Kami</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Dealer Honda Star Motor II — Cikampek</h1>
+        <p>Kami menyediakan unit baru, servis resmi, spare part asli, dan paket kredit yang mudah. Kunjungi showroom kami sekarang juga.</p>
+        <div style="margin-top:12px;color:var(--muted);font-size:13px">
+          Jam buka: Senin - Sabtu 08:00 - 17:00 • Minggu & Hari Libur: Tutup
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="https://logospng.org/download/honda/logo-honda-4096.png" alt="Honda motor" style="width:30%;max-width:520px;border-radius:12px;box-shadow:0 10px 30px rgba(12,20,40,0.08)"/>
+      </div>
+    </section>
+
+    <section id="produk" class="section">
+      <h2>Produk Unggulan</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,pr-true,f-auto/uploads/product-draft/banner/produk-banner-1920x800pxl-beat-sporty-copy-24072025-010507.jpg" alt="Beat CBS"/>
+          <h3>Honda Beat CBS</h3>
+          <div class="price">Rp 18.980.000</div>
+          <p style="color:var(--muted);font-size:13px;margin-top:8px">Irit bahan bakar, desain compact, cocok untuk harian.</p>
+          <button style="border-radius:8px;padding:8px 10px;border:1px solid #e6e9ef;background:white;cursor:pointer" onclick="contactSales()">Hubungi Sales</button>
+        </article>
+
+        <article class="card">
+          <img src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,pr-true,f-auto/uploads/product-draft/banner/head-banner-vario160-1920x800-tr-10012024-040912.jpg" alt="Vario 160"/>
+          <h3>Honda Vario 160</h3>
+          <div class="price">Rp 28.100.000</div>
+          <p style="color:var(--muted);font-size:13px;margin-top:8px">Performa lebih bertenaga dan nyaman dipakai.</p>
+          <button style="border-radius:8px;padding:8px 10px;border:1px solid #e6e9ef;background:white;cursor:pointer" onclick="contactSales()">Hubungi Sales</button>
+        </article>
+
+        <article class="card">
+          <img src="https://ik.imagekit.io/zlt25mb52fx/ahmcdn/tr:q-70,pr-true,f-auto/uploads/product-draft/accessories/final-accessories-honda-scoopy-day-3a-1920x800px-05112024-031724.jpg" alt="CB150R"/>
+          <h3>Honda Scoopy</h3>
+          <div class="price">Rp 22.876.000</div>
+          <p style="color:var(--muted);font-size:13px;margin-top:8px">Sporty look, performa torsi tinggi untuk touring.</p>
+          <button style="border-radius:8px;padding:8px 10px;border:1px solid #e6e9ef;background:white;cursor:pointer" onclick="contactSales()">Hubungi Sales</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="servis" class="section">
+      <h2>Servis & Spare Part Resmi</h2>
+      <div class="services">
+        <div class="card">
+          <h3>Servis Berkala</h3>
+          <p style="color:var(--muted)">Servis berkala sesuai standar pabrikan, mekanik tersertifikasi, spare part asli.</p>
+        </div>
+        <div class="card">
+          <h3>Perbaikan & Ganti Oli</h3>
+          <p style="color:var(--muted)">Layanan cepat dan garansi pengerjaan.</p>
+        </div>
+        <div class="card">
+          <h3>Spare Part & Aksesoris</h3>
+          <p style="color:var(--muted)">Stok spare part resmi Honda dan aksesoris pilihan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="promo" class="section">
+      <h2>Promo & Kredit</h2>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <div class="card" style="flex:1;min-width:240px">
+          <h3>DP Ringan & Cicilan</h3>
+          <p style="color:var(--muted)">Kerjasama dengan leasing terpercaya — simulasi kredit tersedia di showroom.</p>
+        </div>
+        <div class="card" style="flex:1;min-width:240px">
+          <h3>Aksesoris Gratis</h3>
+          <p style="color:var(--muted)">Dapatkan aksesoris resmi Honda motor pada setiap pembelian.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="section">
+      <h2>Kontak & Lokasi</h2>
+      <div class="grid-2">
+        <div>
+          <p style="color:var(--muted)">Jl. Ahmad Yani No.27, Cikampek Sel., Kec. Cikampek, Karawang, Jawa Barat 41373</p>
+          <p style="color:var(--muted)">Telp: 085718529257 • WhatsApp: 085718529257</p>
+
+          <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
+            <a class="button" href="tel:+6285718529257">Telepon</a>
+            <a class="button" href="https://wa.me/6285718529257">WhatsApp</a>
+            <a class="button" href="https://linktr.ee/STARMOTOR2" target="_blank">Linktree</a>
+          </div>
+
+          <h3 style="margin-top:18px">Jam Operasional</h3>
+          <ul style="color:var(--muted)">
+            <li>Senin–Jumat: 08:00–17:00</li>
+            <li>Sabtu: 08:00–16:00</li>
+            <li>Minggu: Tutup</li>
+          </ul>
+        </div>
+        <aside class="card">
+          <h3>Lokasi di Peta</h3>
+          <div style="width:100%;height:220px;background:#eef2ff;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted);">
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.912467526177!2d107.45021847480488!3d-6.405277593585441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6972853f436bc3%3A0xa05b62613827783f!2sDealer%20Honda%20Star%20Motor%20II!5e0!3m2!1sid!2sid!4v1760772742024!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;">
+      <div>© <strong>Honda Star Motor II</strong> — Cikampek</div>
+      <div style="display:flex;gap:8px;align-items:center;">
+        <a href="https://linktr.ee/STARMOTOR2" target="_blank" style="color:var(--primary);font-weight:600;text-decoration:none;">🌐 Linktree</a>
+        <span style="color:var(--muted)">| Kontak: 085718529257</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function contactSales(){
+      window.location.href = 'https://wa.me/6285718529257';
+    }
+  </script>
+</body>
+</html>
